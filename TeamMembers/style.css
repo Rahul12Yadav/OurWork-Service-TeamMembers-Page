@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=PY+Sans:wght@400;700&display=swap');
+body {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 100px;
+    font-size: 16px;
+    line-height: 1.5;
+    background: #f0f4fb;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: grayscale;
+}
+
+.button {
+    display: inline-block;
+    align-content: center;
+    align-items: center;
+    position: relative;
+    margin: 20px 0 0 70px;
+    padding: 3px 7px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 2px #999;
+}
+
+.button:hover {
+    background-color: #3e8e41
+}
+
+.button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.fa {
+    padding: 10px;
+    font-size: 10px;
+    width: 10px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 4px 0 10px;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-dribbble {
+    background: #ea4c89;
+    color: white;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.site-container {
+    margin: 2rem auto;
+    max-width: calc(100% - 80px);
+}
+
+.article-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(265px, 1fr));
+    gap: 1.5em;
+}
+
+.article-image {
+    margin: 20px;
+    padding: 10px;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.article-image img {
+    max-width: 50%;
+    margin: 50px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.article-card {
+    background: white;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.article-card:hover {
+    box-shadow: 0 4px 20px 0 rgba(34, 68, 123, 0.2);
+    cursor: pointer;
+}
+
+.article-content {
+    padding: 2rem;
+    align-items: center;
+}
+
+.article-content .card-category {
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+    color: #6b82a7;
+    display: block;
+    text-decoration: none;
+}
+
+.article-content .card-title {
+    margin: 1rem 0;
+    color: #22447b;
+}
+
+.article-content .card-excerpt {
+    font-size: 1rem;
+    text-align: center;
+    line-height: 1.5rem;
+    color: #6b82a7;
+    margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+    .site-container {
+        max-width: 600px;
+    }
+    .article-card {
+        display: grid;
+        grid-template-rows: 220px 1fr;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .site-container {
+        max-width: 1156px;
+    }
+}
